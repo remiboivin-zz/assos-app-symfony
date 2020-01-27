@@ -1,0 +1,8 @@
+{# templates/lucky/number.html.twig #}
+{% try {for value in users %}
+<h1><a href="/user/{{value['id']}}">Member {{value['id']}}</a></h1>
+name:{{ value['name'] }}
+email is {{ value['email'] }}
+{% endfor }catch(createNotFoundException e){
+
+}%}

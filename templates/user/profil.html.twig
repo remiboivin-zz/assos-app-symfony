@@ -1,0 +1,6 @@
+{# templates/lucky/number.html.twig #}
+<h1><a href="/user/{{user['id']}}">Member {{user['id']}}</a></h1>
+<b>name:</b>{{ user['name'] }}</br>
+<b>email is</b> {{ user['email'] }}</br>
+<a href="/user/{{user['id']}}/update">edit profil</a>
+<a href="/users/{{user['id']}}/remove">delete profile</a>
